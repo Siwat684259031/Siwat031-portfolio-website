@@ -178,7 +178,73 @@ body{
 
 }
 
+/* ==============================================
+                    ABOUT SECTION หน้า 2
+ ============================================== */
 
+/* main container */
+.main-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-profile-content{
+    display: flex;
+    justify-content: center;
+
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    overflow: hidden;
+    object-fit: cover;
+
+    border: 3px solid #00ffcc;
+}
+.profile img{
+    width: 100%;
+    height: 100%; 
+}
+
+.profile-info{
+    background-color: var(--bg-card-subtitle-color);
+    box-shadow: var(--box-shadow-card);
+    color: var(--light-color);
+
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.about-body-container{
+    margin: 2rem;
+    justify-content: center;
+}
+.about-body-card-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.about-body-card{
+    background-color: var(--bg-card-subtitle-color);
+    box-shadow: var(--box-shadow-card);
+    color: var(--light-color);
+
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+.about-body-card h3{
+    color: var(--primary-color);
+    margin: 0.5rem 0 0 0;
+}
 
 
 
@@ -201,7 +267,20 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-}
+    }
+
+    /* about body */
+    .main-profile-content{
+    flex-direction: column;
+    }
+    .profile{
+    margin: 0 auto;
+    }
+
+    .about-body-card-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
 }
 
     @media (max-width:540px) {
