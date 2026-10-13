@@ -199,7 +199,7 @@ body{
 .profile{
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 25px;
 
     overflow: hidden;
     object-fit: cover;
@@ -246,6 +246,73 @@ body{
     margin: 0.5rem 0 0 0;
 }
 
+/* =========================================================
+                 SKILLS SECTION หน้า 3
+ ========================================================= */
+/* =========================================================
+                 PORTFOLIO SECTION หน้า 4
+ ========================================================= */
+/* =========================================================
+                 CONTACT SECTION หน้า 5
+ ========================================================= */
+
+.main-container-contact{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-grid-contact{
+    max-width: 700px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+
+    gap: 1.25rem;
+    margin: 60px auto 1.2rem;
+}
+
+.contact-item{
+    background-color: var(--bg-card-subtitle-color);
+    box-shadow: var(--box-shadow-card);
+    color: var(--light-color);
+
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+    margin: 0 1rem;
+}
+
+.info-text{
+    line-height: 2.5rem;
+}
+
+.info-text a{
+    color: var(--primary-color);
+    background-color: var(--bg-card-subtitle-color);
+    box-shadow: var(--box-shadow-card);
+    border-radius: 0.8rem;
+    text-decoration: none;
+
+    margin-top: 2rem;
+    padding: 0.5rem;
+
+    transition: all 0.5s;
+}
+
+.info-text a:hover{
+    color: var(--nav-color);
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow-hover);
+
+    font-weight: bold;
+}
 
 
 
@@ -280,6 +347,12 @@ body{
     .about-body-card-grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-grid-contact{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
     }
 }
 
