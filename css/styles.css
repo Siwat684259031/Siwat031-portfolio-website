@@ -17,6 +17,7 @@
     --bg-navbar-color: #362aa0e1;
     --bg-card-subtitle-light-color: rgba(30, 27, 46, 0.6);
     --bg-card-subtitle-color:  rgba(38, 34, 59, 0.8);
+    --bg-footer-color:  rgba(7, 4, 14, 0.966);
 
 
     
@@ -36,7 +37,7 @@ body{
 
     background: var(--bg-primary-color);
 
-    padding-bottom: 4.4rem;
+    /* padding-bottom: 4.4rem; */
 }
 /* =========================================================
                  INDEX SECTION หน้า 1
@@ -419,9 +420,19 @@ body{
 }
 
 
+/* ==============================
+            Footer
+ ==============================     */
 
+.main-footer{
+    color: var(--primary-color);
+    background-color: var(--bg-footer-color);
 
+    text-align: center;
 
+    padding: 1.25rem;
+    margin-top: auto;
+}
 
 
 /* ==============================
