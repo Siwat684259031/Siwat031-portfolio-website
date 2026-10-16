@@ -519,16 +519,17 @@ body{
 }
 
     .navbar {
-        display: flex-block;
         flex-direction: column;
         width: 100%;
         
 
     }
-    .navbar a:hover {
-        width: 100%;
-        text-align: center;
-    }
+    .navbar a{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 
     
    .hero-subtitle-card-grid{
